@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thuc-hanh2- html</title>
+</head>
+<body>
+    <h1 id="coffee">Coffee Shop Menu</h1>
+    <ul>
+        <li>coffee</li>
+        <li>capuchino</li>
+        <li>milk tea</li>
+        <li id="1">tropical fruit tea</li>
+        <li id="2">peach tea</li>
+    </ul>
+    <button id="td-update">update menu</button>
+
+    <script>
+        let tdupdate= document.getElementById("td-update");
+        //them thao tac xu ly cho button
+        tdupdate.addEventListener('click', ()  => {
+           
+        coffee.style.color = "red";
+        let a = document.getElementById("1");
+        let b = document.getElementById("2");
+        a.innerText = "peach tea";
+        b.innerText = "fruit yogurt";
+
+            
+        });
+
+    </script>
+    
+</body>
+</html>
