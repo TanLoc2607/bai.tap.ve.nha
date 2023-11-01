@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Bài 3</h2>
+    <p>Viết chương trình nhập vào chiều cao tam giác vuông và in ra tam giác có hình dạng như sau: <br>
+        ***** <br>
+        **** <br>
+        *** <br>
+        ** <br>
+        * <br>
+    </p>
+
+    <form action="">
+        <label for="">Nhập chiều cao tam giác: </label>
+        <input id="height" type="number">
+        <button id="btn-action2" type="button">Submit</button>
+    </form>
+    <script>
+        let count = "height";
+
+        let btnaction2= document.getElementById("btn-action2");
+btnaction2.addEventListener("click", () =>{
+   let chieucao = parseFloat(document.getElementById("height").value);
+   
+   let a= count.length;
+   while(a=1){
+    console.log(a);
+    a -=count.length;
+   }
+
+
+///khong biet lam
+})
+    </script>
+
+</body>
+</html>

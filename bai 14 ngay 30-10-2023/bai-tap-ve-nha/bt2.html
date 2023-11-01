@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Bài 2</h2>
+    <p>Viết chương trình nhập vào một số nguyên n và in ra các số từ 1 đến n với các trường hợp ngoại lệ như sau: <br>
+        - Nếu số đó chia hết cho 3 thì in "java" <br>
+        - Nếu số đó chia hết cho 7 thì in "script" <br>
+        - Nếu số đó chia hết cho cả 3 và 7 thì in "javascript" <br>
+        <br>
+        Ví dụ: n = 25 <br>
+        1 <br>
+        2 <br>
+        java <br>
+        4 <br>
+        5 <br>
+        java <br>
+        script <br>
+        8 <br>
+        java <br>
+        10 <br>
+        11 <br>
+        java <br>
+        13 <br>
+        script <br>
+        java <br>
+        16 <br>
+        17 <br>
+        java <br>
+        19 <br>
+        20 <br>
+        javascript <br>
+        22 <br>
+        23 <br>
+        java <br>
+        25 <br>
+    </p>
+
+    <form action="">
+        <label for="">Nhập số nguyên n: </label>
+        <input id="n" type="number">
+        <button id="btn-action1" type="button">Submit</button>
+    </form>
+    <script>
+        let btnaction1 =document.getElementById("btn-action1");
+btnaction1.addEventListener("click", () => {
+    let n = parseFloat(document.getElementById("n").value);
+    for(a=1;a<=n;a+=1){
+        if(((a%3)+(a%7))==0){
+            console.log(`javascript`);
+            continue;
+        }
+        else if((a%3)==0){
+            console.log(`java`);
+            continue;
+            }else if(a%7==0){
+                console.log(`script`);
+                continue;
+                
+            };
+
+        console.log(a);
+        
+        
+    };
+ 
+});
+    </script>
+</body>
+</html>
