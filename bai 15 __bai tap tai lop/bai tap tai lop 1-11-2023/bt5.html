@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</form>
+
+<!-- ---------------------------------------------------------------------------------------------------- -->
+
+<h2>Bài 5</h2>
+<p>Viết chương trình nhập vào 1 số nguyên n
+    và kiểm tra n có phải là số hoàn hảo hay không <br>
+
+    Note: số hoàn hảo là số có tổng các ước số của nó bằng chính nó. <br>
+    Ví dụ: 6 là số hoàn hảo vì tổng các ước của nó là: 1 + 2 + 3 = 6</p>
+
+<form action="">
+    <label for="">Nhập số nguyên n: </label>
+    <input id="n" type="number">
+    <button id="btn-action" type="button">Submit</button>
+</form>
+<script>
+  let btnaction =document.getElementById("btn-action");
+        btnaction.addEventListener("click", () => {
+            let n1=parseFloat(document.getElementById("n").value);
+           let a = 0;
+            for(let i = 1; i < n1; i += 1){
+                if(n1%i == 0){
+                    a= a+i;
+                };
+            }
+                    
+                    if(a == n1){
+                        alert('la so hoan hao');
+                    }
+                    else {
+                        alert('khong la so hoan hao')
+                    };
+                
+            
+        });///khong biet lam
+</script>
+</body>
+</html>

@@ -21,18 +21,16 @@
         <button id="btn-action2" type="button">Submit</button>
     </form>
     <script>
-        let count = "height";
+     ;
 
         let btnaction2= document.getElementById("btn-action2");
 btnaction2.addEventListener("click", () =>{
    let chieucao = parseFloat(document.getElementById("height").value);
-   
-   let a= count.length;
-   while(a=1){
-    console.log(a);
-    a -=count.length;
-   }
-
+   let i = chieucao;
+ while (i>=1) {
+    console.log('*'.repeat(i));
+    i -=1;
+ };
 
 ///khong biet lam
 })
