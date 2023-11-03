@@ -18,7 +18,29 @@
         <button id="btn-action" type="button">Submit</button>
     </form>
   <script>
+  let btnaction= document.getElementById("btn-action");
+btnaction.addEventListener("click", () =>{
+   let n = parseFloat(document.getElementById("n").value);
+          let totaldigit=0;
+          let sumdigit = 0;
+          let reversedvalue = 0;
 
+
+          while (n !=0){
+            sumdigit += n%10;
+            reversedvalue =reversedvalue *10 +n%10;
+            n = parseInt(n/10);
+              
+
+               
+               
+               totaldigit++;
+          }
+        console.log(`so luong chu so n la ${totaldigit}`);
+        console.log(`tong cacs chu so cua n la ${sumdigit}`);
+        console.log(`chu so dao nguoc cua n la ${reversedvalue}`);
+        
+});
   </script>
 </body>
 </html>
